@@ -28,11 +28,14 @@ public class example1 {
     }
 
     public static int countPrime(int n) {
+        int i = 2;
         int count = 0;
-        for (int i = 2; i <= n; i++) {
-            if (isPrime(i) == true)
-                count++;
+        while (i <= n) {
+            if (isPrime(i) == true) {
 
+                count++;
+            }
+            i++;
         }
         return count;
 
