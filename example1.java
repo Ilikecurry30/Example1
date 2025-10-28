@@ -7,6 +7,7 @@ public class example1 {
         System.out.println(countFactors(24));
         System.out.println(isPrime(27));
         System.out.println(isPrime(47));
+        System.out.println(countPrime(1000));
 
     }
 
@@ -24,5 +25,16 @@ public class example1 {
 
     public static boolean isPrime(int n) {
         return countFactors(n) == 2;
+    }
+
+    public static int countPrime(int n) {
+        int count = 0;
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i) == true)
+                count++;
+
+        }
+        return count;
+
     }
 }
